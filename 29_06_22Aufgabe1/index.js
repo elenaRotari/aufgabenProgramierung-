@@ -20,3 +20,9 @@ console.log(
     meinGeburtsJahr +
     " geboren."
 );
+
+const wasserTiefe = 300;
+const wasserVolume = 3750;
+const keineWettKampfe = (wasserVolume / wasserTiefe) * 5;
+
+console.log(keineWettKampfe);
