@@ -34,3 +34,12 @@ const tankFuhlung = 66;
 
 const tankFuhlung66 = (weitWeg * tankFuhlung) / verbrauchAuto;
 console.log(tankFuhlung66);
+
+const arbeiterTeer = 3;
+const zeitDafur = 17;
+const arbeiterMehr = 5;
+
+const zeitMehrArbeiter = (arbeiterTeer * zeitDafur) / arbeiterMehr;
+console.log(zeitMehrArbeiter);
+
+const nummer1 = 882;
