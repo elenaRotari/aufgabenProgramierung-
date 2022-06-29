@@ -51,3 +51,15 @@ const nummer5 = 999;
 const ergebniss = (((nummer1 / nummer2) * nummer3) / nummer4) * nummer5;
 
 console.log(ergebniss);
+
+const nummer12 = 12;
+const nummer23 = 7;
+const nummer34 = 17;
+const nummer45 = 7;
+const nummer56 = 17;
+const nummer67 = 333;
+
+const ergebniss1 =
+  (nummer12 * nummer23 * nummer34) / nummer45 / nummer56 + nummer67;
+
+console.log(ergebniss1);
