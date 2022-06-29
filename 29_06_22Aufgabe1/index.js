@@ -41,3 +41,13 @@ const arbeiterMehr = 5;
 
 const zeitMehrArbeiter = (arbeiterTeer * zeitDafur) / arbeiterMehr;
 console.log(zeitMehrArbeiter);
+
+const nummer1 = 882;
+const nummer2 = 14;
+const nummer3 = 12;
+const nummer4 = 2.3;
+const nummer5 = 999;
+
+const ergebniss = (((nummer1 / nummer2) * nummer3) / nummer4) * nummer5;
+
+console.log(ergebniss);
