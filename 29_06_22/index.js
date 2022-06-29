@@ -23,8 +23,9 @@ console.log(
 
 const wasserTiefe = 300;
 const wasserVolume = 3750;
+const kostenGrunden = 5;
 
-const keineWettKampfe = (wasserVolume / wasserTiefe) * 5;
+const keineWettKampfe = (wasserVolume / wasserTiefe) * kostenGrunden;
 
 console.log(keineWettKampfe);
 
