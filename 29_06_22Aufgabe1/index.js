@@ -23,6 +23,14 @@ console.log(
 
 const wasserTiefe = 300;
 const wasserVolume = 3750;
+
 const keineWettKampfe = (wasserVolume / wasserTiefe) * 5;
 
 console.log(keineWettKampfe);
+
+const verbrauchAuto = 8;
+const weitWeg = 100;
+const tankFuhlung = 66;
+
+const tankFuhlung66 = (weitWeg * tankFuhlung) / verbrauchAuto;
+console.log(tankFuhlung66);
