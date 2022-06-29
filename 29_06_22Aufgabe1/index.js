@@ -63,3 +63,11 @@ const ergebniss1 =
   (nummer12 * nummer23 * nummer34) / nummer45 / nummer56 + nummer67;
 
 console.log(ergebniss1);
+
+const langeGarten = 1680;
+const sockelVerbrauch = 120;
+const preisSockel = 24.4;
+
+const gessamtePreis = (langeGarten / sockelVerbrauch) * preisSockel;
+
+console.log(gessamtePreis);
