@@ -10,14 +10,14 @@ let iban1 = "1234 0000 9908 9999"; //variable werden  nur einmal mit den gleiche
 let iban2 = "1222 0000 9908 9999";
 let betrag = 23.3; // decimal sind immer nur mit ein puct definiert, und immer space between variable und name
 console.log("Starte Überweisung");
-console.log(`Von ${kunde1} IBAN: ${iban1}`);
-console.log(`Nach ${kunde2} IBAN: ${iban2}`);
-console.log(`Sende Betrag ${betrag}€`);
-console.log("Überweisung erfolgreich");
+console.log(`Von ${kunde1} IBAN: ${iban1}`); // Anführungszeichen  weg und backstick benutzen
+console.log(`Nach ${kunde2} IBAN: ${iban2}`); // Anführungszeichen  weg und backstick benutzen
+console.log(`Sende Betrag ${betrag}€`); //richtig
+console.log("Überweisung erfolgreich"); //richtig
 //Transaktionsdauer erfassen
-const bankName1 = "Sparkasse Berlin";
-let transaktionsDauer;
-transaktionsDauer = 100;
-console.log("Beende Verbindung...");
-console.log("Verbindung mit " + bankName1 + " beendet");
-console.log("Dauer der Transaktion " + transaktionsDauer + "s");
+const bankName1 = "Sparkasse Berlin"; //variable benutzen
+let transaktionsDauer; // const kann nicht andern
+transaktionsDauer = 100; // richtig
+console.log("Beende Verbindung..."); // richtig
+console.log("Verbindung mit " + bankName1 + " beendet"); // wir können nur die gleiche  "" oder '' oder `` benutzen , nicht verschiedene
+console.log("Dauer der Transaktion " + transaktionsDauer + "s"); //richtig
