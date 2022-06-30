@@ -1,5 +1,5 @@
 const API_URL = "api.sparkasse.de/v3/accounts";
-const API_key = "lwqdjOI987HHUIaihjaskdh";
+const API_KEY = "lwqdjOI987HHUIaihjaskdh"; // wichtige VARIABLEN KÖNNEN WIR AUCH MIT GROSSE BUCHSTABE
 const transferCustomerId = "transfer-009"; // camelCase benutzt
 const bankName = "Sparkasse"; // camelCase benutzt
 console.log("Initialisiere Verbindung..."); //klamern auf und zu immer
