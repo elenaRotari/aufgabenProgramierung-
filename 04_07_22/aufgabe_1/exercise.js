@@ -11,9 +11,9 @@ console.log({ result1_1 });
 const aufgabe1_2 = "rgb(21, 35, 112)";
 const rot1_2 = aufgabe1_2.substring(4, 6);
 const green1 = aufgabe1_2.substring(8, 10);
-const greenErhohen1 = +green1 + 100;
+const greenErhohen1 = +green1 + 75;
 const blau1 = aufgabe1_2.substring(11, 15);
-const blauErhohen1 = +blau1 + 75;
+const blauErhohen1 = +blau1 + 100;
 const result1_2 = `rgb(${rot1_2}, ${greenErhohen1}, ${blauErhohen1})`;
 
 console.log({ result1_2 });
@@ -22,9 +22,9 @@ console.log({ result1_2 });
 
 const aufgabe1_3 = "rgb(167, 249, 85)";
 const rot1_3 = aufgabe1_3.substring(4, 7);
-const viertelReduceRot = +rot1_3 - rot1_3 * 0.25;
+const viertelReduceRot = +rot1_3 * 0.25;
 const blau1_3 = aufgabe1_3.substring(14, 16);
-const viertelReduceBlau = +blau1_3 - blau1_3 * 0.25;
+const viertelReduceBlau = +blau1_3 * 0.25;
 const green1_3 = aufgabe1_3.substring(9, 12);
 const result1_3 = `rgb(${Math.floor(
   viertelReduceRot
@@ -56,11 +56,13 @@ console.log({ result2_2 });
 //aufgabe2_3
 const aufgabe2_3 = "rgb(229, 13, 218)";
 const rot2_3 = parseInt(aufgabe2_3.substring(4, 7)).toString(16);
-const green2_3 = parseInt(aufgabe2_3.substring(9, 11)).toString(16);
-const blau2_3 = parseInt(aufgabe2_3.substring(14, 17)).toString(16);
 
-const result2_3 = `hex: #${rot2_3}${green2_3}${blau2_3}`;
-greenErhohen1, blauErhohen1;
+const green2_3 = parseInt(aufgabe2_3.substring(8, 11)).toString(16);
+
+const blau2_3 = parseInt(aufgabe2_3.substring(13, 16)).toString(16);
+
+const result2_3 = `hex: #${rot2_3}0${green2_3}${blau2_3}`;
+console.log({ result2_3 });
 //aufgabe2.4
 
 const aufgabe2_4 = "#02D633";
@@ -86,13 +88,16 @@ console.log({ result3_1 });
 ///##Aufgabe3.2
 
 const aufgabe3_2 = "rgb(59, 31, 242) ";
-const blau3_2 = parseInt(aufgabe3_2.slice(12, 15)) - 200;
-const blauSmaller = blau3_2.toString(16);
-const green3_2 = parseInt(aufgabe3_2.slice(8, 11)) - 31;
-const greenSmaller = green3_2.toString(16);
+
 const rot3_2 = parseInt(aufgabe3_2.slice(4, 7)).toString(16);
 
-const result3_2 = `hex: #${rot3_2}${greenSmaller}${blauSmaller}`;
+const green3_2 = parseInt(aufgabe3_2.slice(8, 11)) - 31;
+const greenSmaller = green3_2.toString(16);
+const blau3_2 = parseInt(aufgabe3_2.slice(12, 15)) - 200;
+
+const blauSmaller = blau3_2.toString(16);
+
+const result3_2 = `hex: #${rot3_2}${greenSmaller}${greenSmaller}${blauSmaller}`;
 console.log({ result3_2 });
 
 //Aufgabe 3.3
@@ -118,10 +123,12 @@ console.log({ result3_4 });
 
 const aufgabe3_5 = "rgb(165, 21, 50)";
 
-const rot3_5 = Math.round(parseInt(aufgabe3_5.slice(4, 7)) * 0.75);
+const rot3_5 = Math.floor(parseInt(aufgabe3_5.slice(4, 7)) * 0.25);
+
 const rot3_5_1 = rot3_5.toString(16);
 const green3_5 = parseInt(aufgabe3_5.slice(8, 11)).toString(16);
-const blau3_5 = Math.round(parseInt(aufgabe3_5.slice(12, 15)) * 0.75);
+const blau3_5 = Math.floor(parseInt(aufgabe3_5.slice(12, 15)) * 0.25);
+
 const blau3_5_1 = blau3_5.toString(16);
-const result3_5 = `hex: #${rot3_5_1}${green3_5}${blau3_5_1}`;
+const result3_5 = `hex: #${rot3_5_1}${green3_5}0${blau3_5_1}`;
 console.log({ result3_5 });
