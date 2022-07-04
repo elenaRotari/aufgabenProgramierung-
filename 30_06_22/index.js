@@ -21,3 +21,7 @@ transaktionsDauer = 100; // richtig
 console.log("Beende Verbindung..."); // richtig
 console.log("Verbindung mit " + bankName1 + " beendet"); // wir können nur die gleiche  "" oder '' oder `` benutzen , nicht verschiedene
 console.log("Dauer der Transaktion " + transaktionsDauer + "s"); //richtig
+
+/*öijdäakäpo
+äokfcävcl
+öljedöasek*/
