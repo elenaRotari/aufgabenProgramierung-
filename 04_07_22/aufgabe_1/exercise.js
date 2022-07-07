@@ -59,9 +59,11 @@ const rot2_3 = parseInt(aufgabe2_3.substring(4, 7)).toString(16);
 
 const green2_3 = parseInt(aufgabe2_3.substring(8, 11)).toString(16);
 
+const greenPads2 = green2_3.padStart(2, "0");
+
 const blau2_3 = parseInt(aufgabe2_3.substring(13, 16)).toString(16);
 
-const result2_3 = `hex: #${rot2_3}0${green2_3}${blau2_3}`;
+const result2_3 = `hex: #${rot2_3}${greenPads2}${blau2_3}`;
 console.log({ result2_3 });
 //aufgabe2.4
 
@@ -123,12 +125,22 @@ console.log({ result3_4 });
 
 const aufgabe3_5 = "rgb(165, 21, 50)";
 
-const rot3_5 = Math.floor(parseInt(aufgabe3_5.slice(4, 7)) * 0.25);
+const rot3_5 = Math.round(parseInt(aufgabe3_5.slice(4, 7)) * 0.25);
 
 const rot3_5_1 = rot3_5.toString(16);
 const green3_5 = parseInt(aufgabe3_5.slice(8, 11)).toString(16);
-const blau3_5 = Math.floor(parseInt(aufgabe3_5.slice(12, 15)) * 0.25);
+const blau3_5 = Math.round(parseInt(aufgabe3_5.slice(12, 15)) * 0.25);
 
 const blau3_5_1 = blau3_5.toString(16);
-const result3_5 = `hex: #${rot3_5_1}${green3_5}0${blau3_5_1}`;
+const blauPads = blau3_5_1.padStart(2, "0");
+const result3_5 = `hex: #${rot3_5_1}${green3_5}${blauPads}`;
 console.log({ result3_5 });
+
+//Bonusaufgabe padsStarts & end
+
+// const aufgabeBonus = "rgb(23, 565, 157)";
+// const letBonus = aufgabeBonus.slice(4, -1);
+// const resultBonus = letBonus.padStart(aufgabeBonus.length);
+// const resultBonus1 = parseInt(letBonus).toString(16);
+
+// console.log(`${resultBonus1} `);
