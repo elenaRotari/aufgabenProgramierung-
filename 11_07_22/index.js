@@ -5,6 +5,8 @@ let teuerste = cost[0];
 let guenstigste = cost[0];
 let summe = 0;
 
+// console.log(Math.max(...cost));
+
 for (let i = 0; i < cost.length; i++) {
   if (teuerste < cost[i]) {
     teuerste = cost[i];
@@ -24,12 +26,12 @@ console.log(`Die Summe aller Produkte ist: ${summe}€`);
 
 let amounts = [4, 1, 2, 1, 3];
 let summeAmounts = 0;
-let list = 0;
+
 for (let i = 0; i < amounts.length; i++) {
   console.log(`${productNames[i]} wurde ${amounts[i]} mal verkauft`);
 }
 
-for (let i = 0; i < amounts.length; i++) {
+for (let i = 0; i < cost.length; i++) {
   summeAmounts += cost[i] * amounts[i];
 }
 
