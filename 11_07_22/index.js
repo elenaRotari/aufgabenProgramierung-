@@ -7,14 +7,18 @@ let summe = 0;
 
 // console.log(Math.max(...cost));
 
-for (let i = 0; i < cost.length; i++) {
+for (let i = 1; i < cost.length; i++) {
+  // es wird über cost iterriert und es wird der i-te mit nächsten verglichen,
+
   if (teuerste < cost[i]) {
+    ////
     teuerste = cost[i];
   }
   if (guenstigste > cost[i]) {
     guenstigste = cost[i];
   }
   summe += cost[i];
+  console.log(`Durchlauf ${i}, max ${teuerste}, min ${guenstigste}, ${summe}`);
 }
 console.log(
   `Das teuerste Produkt ist: ${productNames[cost.indexOf(teuerste)]}`
