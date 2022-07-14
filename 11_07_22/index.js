@@ -11,7 +11,6 @@ for (let i = 1; i < cost.length; i++) {
   // es wird über cost iterriert und es wird der i-te mit nächsten verglichen,
 
   if (teuerste < cost[i]) {
-    ////
     teuerste = cost[i];
   }
   if (guenstigste > cost[i]) {
