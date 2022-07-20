@@ -3,9 +3,10 @@
 console.log("-----Aufgabe1 ------");
 
 function ersteBuchstabeUpperCase(str) {
-  if (!(typeof str === "string")) {
+  if (typeof str !== "string") {
     return "Invalides Argument! Es muss ein String übergeben werden!";
   }
+
   const arrStr = str.split(" ");
   const result = [];
   for (let i = 0; i < arrStr.length; i++) {
@@ -15,7 +16,7 @@ function ersteBuchstabeUpperCase(str) {
 }
 console.log(
   ersteBuchstabeUpperCase(
-    "Authoritatively incentivize excellent alignments whereas sources rapidiously."
+    "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
   )
 );
 
@@ -23,32 +24,38 @@ console.log(
 
 console.log("-----Aufgabe2 ------");
 function maxThirty(arr) {
-  if (!(typeof arr === "string")) {
-    return "Invalides Argument! Es muss ein String übergeben werden!";
-  }
-  return arr.split(" ").splice(0, 30).join(" ") + "...";
-  //   const result1 = arr.split(" ");
-  //   console.log(result1.length);
-  //   const result2 = result1.splice(0, 30);
-  //   console.log(result2.length);
+  // if (!(typeof arr === "string")) {
+  //   return "Invalides Argument! Es muss ein String übergeben werden!";
+  // }
+  // return arr.split(" ").splice(0, 30).join(" ") + "...";
 
+  const result1 = arr.split(" ");
+
+  const name = new Array(30);
+  const result2 = result1.slice(0, name.length);
+  console.log(result2.length);
+  console.log(result1.length); //   if (result1.length > 30) {
+  //     return result2.join(" ") + "...";
+  //   }
   //   return result2.join(" ");
+  // }
 }
 
 console.log(
   maxThirty(
-    "Progressively repurpose best-of-breed markets whereas functional value. Collaboratively incubate multifunctional core competencies and mission-critical manufactured products. Uniquely restore progressive bandwidth rather than timely initiatives. Interactively exploit client-centric e-business without convergence Intrinsicly brand open-source infomediaries vis-a-vis economically sound expertise."
+    "orem Ipsum is simply dummy text of the printing and typesetting industry.orem Ipsum is simply dummy text of the printing and typesetting industry.orem Ipsum is simply dummy text of the printing and typesetting industry.orem Ipsum is simply dummy text of the printing and typesetting industry.orem Ipsum is simply dummy text of the printing and typesetting industry.orem Ipsum is simply dummy text of the printing and typesetting industry.orem Ipsum is simply dummy text of the printing and typesetting industry."
   )
 );
 
 console.log("-----Aufgabe3 ------");
 
 function bothExercise(params) {
-  return maxThirty(ersteBuchstabeUpperCase(params));
+  // return maxThirty(ersteBuchstabeUpperCase(params));
+  return ersteBuchstabeUpperCase(maxThirty(params));
 }
 console.log(
   bothExercise(
-    "Progressively repurpose best-of-breed markets whereas functional value. Collaboratively incubate multifunctional core competencies and mission-critical manufactured products. Uniquely restore progressive bandwidth rather than timely initiatives. Interactively exploit client-centric e-business without convergence. Intrinsicly brand open-source infomediaries vis-a-vis economically sound expertise."
+    "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
   )
 );
 //// ich benutze keine globalen variablen, somit modifiziere ich keine. Meine Functionen benutze nur Übergabeparameter
