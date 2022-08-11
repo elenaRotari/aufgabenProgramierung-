@@ -1,5 +1,5 @@
-// // Fibonacci Zahlen
-// console.log("--------------aufgabe1------------");
+// Fibonacci Zahlen
+console.log("--------------aufgabe1------------");
 function fibonacciZAhlen1(arg1, arg2) {
   return arg1 + arg2;
 }
@@ -22,7 +22,7 @@ console.log(fibonacciZAhlen1(7, 89));
 // console.log(fibonaccizahlen2(144));
 // console.log("--------------aufgabe2.1------------");
 function fibonaccizahlen3(num) {
-  const fibo = [0, 1, 1];
+  const fibo = [0, 1];
 
   while (num > fibo[fibo.length - 1]) {
     fibo.push(fibo[fibo.length - 2] + fibo[fibo.length - 1]);
@@ -35,14 +35,14 @@ console.log(fibonaccizahlen3(50));
 console.log(fibonaccizahlen3(144));
 // console.log("--------------aufgabe2.2------------");
 
-// function fibonaccizahlen4(num) {
-//   const result = [0, 1];
-//   while (result[result.length - 1] < num - result[result.length - 2]) {
-//     const sum = result[result.length - 1] + result[result.length - 2];
-//     result.push(sum);
-//   }
-//   return result;
-// }
-// console.log(fibonaccizahlen4(10));
-// console.log(fibonaccizahlen4(50));
-// console.log(fibonaccizahlen4(144));
+function fibonaccizahlen4(num) {
+  const result = [0, 1];
+  while (result[result.length - 1] < num - result[result.length - 2]) {
+    const sum = result[result.length - 1] + result[result.length - 2];
+    result.push(sum);
+  }
+  return result;
+}
+console.log(fibonaccizahlen4(10));
+console.log(fibonaccizahlen4(50));
+console.log(fibonaccizahlen4(144));

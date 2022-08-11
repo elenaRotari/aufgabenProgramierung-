@@ -6,7 +6,7 @@ for (let i = 0; i < modifidString.length; i++) {
   console.log(modifidString[i]);
   result.push([modifidString[i], 1]);
 }
-console.log(result);
+// console.log(result);
 for (let i = 0; i < result.length - 1; i++) {
   for (let j = i + 1; j < result.length; j++) {
     // console.log(result[i], i, result[j], j, result.length);
@@ -18,6 +18,7 @@ for (let i = 0; i < result.length - 1; i++) {
   }
 }
 console.log(result);
+
 // // ​
 // const countLetters = (str) => {
 //   const result = {};
@@ -28,4 +29,4 @@ console.log(result);
 //   }
 //   return result;
 // };
-// console.log(countLetters(str));
+// console.log(countLetters("i love you"));
